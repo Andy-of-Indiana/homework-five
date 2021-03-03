@@ -25,45 +25,103 @@ p {
 }
 
 nav {
-  max-height: 100px;
+  min-height: 100px;
   width: 77%;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   background-color: transparent;
 }
-nav .linksWhite {
-  min-width: 525px;
-  margin-right: 25px;
-  padding: 40px 0;
+nav .lineWhite {
+  min-height: 100px;
+  width: 100%;
+  border: 2px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
   display: flex;
+  justify-content: space-between;
+}
+nav .lineWhite .linksWhite {
+  width: 525px;
+  margin-right: 25px;
+  display: flex;
+  margin-top: 50px;
   justify-content: space-around;
 }
-nav .linksWhite a {
+nav .lineWhite .linksWhite a {
   font-size: 21px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: none;
   color: white;
 }
-nav .linksBlack {
-  min-width: 525px;
-  margin-right: 25px;
-  padding: 45px 0;
+nav .lineWhite .linksWhite p {
+  font-size: 21px;
+  color: white;
+}
+nav .lineWhite .whiteLine {
+  min-height: 100px;
+  width: 100%;
+  border: 2px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav .lineWhite .whiteLine .linksWhite {
+  width: 525px;
+  margin-right: 25px;
+  display: flex;
+  margin-top: 50px;
   justify-content: space-around;
 }
-nav .linksBlack a {
+nav .lineWhite .whiteLine .linksWhite a {
+  font-size: 21px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  color: white;
+}
+nav .lineWhite .whiteLine .linksWhite p {
+  font-size: 21px;
+  color: white;
+}
+nav .lineBlack {
+  min-height: 100px;
+  width: 100%;
+  border: 2px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav .lineBlack .linksBlack {
+  width: 525px;
+  margin-right: 25px;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+nav .lineBlack .linksBlack a {
   font-size: 21px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: none;
   color: black;
 }
-nav p {
+nav .lineBlack .linksBlack p {
   font-size: 21px;
-  color: #79addc;
+  color: black;
 }
 
+@media only screen and (max-width: 885px) {
+  nav .lineWhite {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .lineWhite .linksWhite {
+    margin-right: 0;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
 .logoWhite {
   height: 63px;
   width: 140px;
@@ -75,13 +133,6 @@ nav p {
   background-image: url(../assets/images/logo-white.png);
 }
 
-.whiteLine {
-  height: 2px;
-  width: 100%;
-  margin-top: -25px;
-  background: white;
-}
-
 .logoBlack {
   height: 63px;
   width: 140px;
@@ -91,13 +142,6 @@ nav p {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../assets/images/logo-black.png);
-}
-
-.blackLine {
-  height: 2px;
-  width: 100%;
-  margin-top: -25px;
-  background: black;
 }
 
 .innerBinding {
@@ -489,12 +533,12 @@ nav p {
   margin-left: 20px;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 918px) {
   .homeBG {
-    height: 575px;
+    height: 600px;
   }
   .homeBG .homeTitle {
-    margin-top: 125px;
+    margin-bottom: 20px;
   }
   .homeBG .homeTitle .bookingFormQuanityCol {
     height: auto;

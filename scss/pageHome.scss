@@ -232,7 +232,6 @@
       background-image: url(../assets/images/down-arrow.svg);
     }
   }
-
   .bookingFormMessage {
     height: 200px;
     width: auto;
@@ -248,13 +247,12 @@
     margin-left: 20px;
   }
 }
-@media only screen and (max-width: 950px) {
+
+@media only screen and (max-width: 918px) {
   .homeBG {
-    height: 575px;
-
+    height: 600px;
     .homeTitle {
-      margin-top: 125px;
-
+      margin-bottom: 20px;
       .bookingFormQuanityCol {
         height: auto;
         width: 136px;
