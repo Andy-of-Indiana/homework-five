@@ -1,29 +1,16 @@
-.logoWhite {
+.logo {
   height: 63px;
   width: 140px;
   margin-left: 25px;
   margin-top: 15px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../assets/images/logo-white.png);
 }
-.logoBlack {
-  height: 63px;
-  width: 140px;
-  margin-left: 25px;
-  margin-top: 15px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../assets/images/logo-black.png);
-}
+
 .innerBinding {
   height: auto;
   width: 64%;
   margin: 0 auto;
 }
-.OuterBinding {
+.outerBinding {
   height: auto;
   width: 77%;
   margin: 0 auto;
@@ -91,11 +78,7 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .logoWhite {
-    margin: 0 auto;
-    margin-top: 15px;
-  }
-  .logoBlack {
+  .logo {
     margin: 0 auto;
     margin-top: 15px;
   }
