@@ -111,12 +111,21 @@ nav .lineBlack .linksBlack p {
   color: black;
 }
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 880px) {
   nav .lineWhite {
     flex-wrap: wrap;
     justify-content: center;
   }
   nav .lineWhite .linksWhite {
+    margin-right: 0;
+    margin: auto;
+    margin-top: 20px;
+  }
+  nav .lineBlack {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .lineBlack .linksBlack {
     margin-right: 0;
     margin: auto;
     margin-top: 20px;
@@ -556,6 +565,136 @@ nav .lineBlack .linksBlack p {
   src: url(../assets/fonts/ProximaNova-Regular.ttf);
 }
 .aboutContent {
-  min-height: 1000px;
+  min-height: 950px;
   width: 100%;
+  display: flex;
+}
+.aboutContent .about {
+  min-height: 220px;
+  width: auto;
+  margin-top: 90px;
+}
+.aboutContent .about .aboutTitle {
+  height: 80px;
+  width: 225px;
+  position: relative;
+}
+.aboutContent .about .aboutTitle .titleLine {
+  height: 2px;
+  width: 70%;
+  background-color: black;
+  bottom: 0;
+  position: absolute;
+}
+.aboutContent .about .aboutTitle h1 {
+  font-size: 60px;
+  font-family: proxNovaLight;
+  color: black;
+}
+.aboutContent .about .aboutWords {
+  min-height: 100px;
+  width: auto;
+  margin-top: 40px;
+}
+.aboutContent .about .aboutWords p {
+  font-size: 19px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+.aboutContent .clientQuotes {
+  min-height: 450px;
+  max-width: 750px;
+  margin-top: 100px;
+  position: relative;
+}
+.aboutContent .clientQuotes .clientQuotesTitle {
+  height: 60px;
+  width: 350px;
+  position: relative;
+}
+.aboutContent .clientQuotes .clientQuotesTitle .titleLine {
+  height: 2px;
+  width: 70%;
+  background-color: black;
+  bottom: 0;
+  position: absolute;
+}
+.aboutContent .clientQuotes .clientQuotesTitle h2 {
+  font-size: 45px;
+  font-family: proxNovaLight;
+  color: black;
+}
+.aboutContent .clientQuotes .clientQuotesContent {
+  min-height: 350px;
+  width: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aboutContent .clientQuotes .clientQuotesContent .clientQuotesBox {
+  min-height: 150px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutContent .clientQuotes .clientQuotesContent .clientQuotesBox .clientImage {
+  height: 150px;
+  width: 260px;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aboutContent .clientQuotes .clientQuotesContent .clientQuotesBox .one {
+  background-image: url(../assets/images/about-client-01.jpg);
+}
+.aboutContent .clientQuotes .clientQuotesContent .clientQuotesBox .two {
+  background-image: url(../assets/images/about-client-02.jpg);
+}
+.aboutContent .clientQuotes .clientQuotesContent .clientQuotesBox .client {
+  min-height: 150px;
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aboutContent .clientQuotes .clientQuotesContent .clientQuotesBox .client .clientWords {
+  height: 120px;
+  width: auto;
+}
+.aboutContent .clientQuotes .clientQuotesContent .clientQuotesBox .client .clientWords p {
+  font-size: 19px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+.aboutContent .clientQuotes .clientQuotesContent .clientQuotesBox .client .clientName {
+  min-height: 30px;
+  width: auto;
+  text-align: end;
+}
+.aboutContent .clientQuotes .clientQuotesContent .clientQuotesBox .client .clientName p {
+  font-size: 25px;
+  font-family: proxNovaLight;
+  color: #79addc;
+}
+
+@media only screen and (max-width: 965px) {
+  .clientQuotesContent {
+    height: 700px;
+    margin-bottom: 40px;
+  }
+  .clientQuotesContent .clientQuotesBox {
+    height: 350px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+@font-face {
+  font-family: proxNovaLight;
+  src: url(../assets/fonts/Proxima-Nova-Thin.ttf);
+}
+@font-face {
+  font-family: proxNovaReg;
+  src: url(../assets/fonts/ProximaNova-Regular.ttf);
 }
